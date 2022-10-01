@@ -1,5 +1,9 @@
 <!-- "Jinja" templating language for Python backends-->
 
+{% extends 'base.html' %}
+
+{% block content %}
+
 <h1> Hello {{landlord_name|capitalize|trim}}</h1>
 
 <h2> Let's Make The Neighborhood You Want To See </h2>
@@ -14,3 +18,5 @@
 </ul>
 
 <a href="/dashboard">Submit</a>
+
+{% endblock %}
