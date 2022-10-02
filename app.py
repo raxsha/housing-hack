@@ -21,6 +21,7 @@ app = Flask(__name__)
 # Form security - CSRF token. Usually don't push to github
 WTF_CSRF_SECRET_KEY = 'a random string'
 app.config['SECRET_KEY'] = "house hacking"
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://nhpuuxqkpekdav:5f76d1b0e5295e2fc3d75bb110ad5cf00abb1bdef48c5dc9dd0746d9e107ffeb@ec2-34-194-40-194.compute-1.amazonaws.com:5432/d7krpdvdcs52qr'
 
 # wtforms API - https://wtforms.readthedocs.io/en/3.0.x/
 # Tenant profile form class
