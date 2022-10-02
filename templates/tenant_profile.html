@@ -1,0 +1,43 @@
+<!-- "Jinja" templating language for Python backends-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if name %}
+  <h1> Hello {{name|capitalize|trim}}</h1>
+  <h3> Tell us about yourself!</h3>
+{% else %}
+  <h1> What's your name?</h1>
+  <br/>
+  <form method= "POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}  <!-- creates our CSRF -->
+
+    {{ form.name.label(class="form-label") }} <!-- classnames map to Bootstrap styles -->
+    {{ form.name(class="form-control") }}
+
+    {{ form.family.label(class="form-label") }}
+    {{ form.family(class="form-control") }}
+
+    {{ form.pets.label(class="form-label") }}
+    {{ form.pets(class="form-control") }}
+
+    {{ form.contributions.label(class="form-label") }}
+    {{ form.contributions(class="form-control") }}
+
+    {{ form.volunteering.label(class="form-label") }}
+    {{ form.volunteering(class="form-control") }}
+
+    {{ form.bio.label(class="form-label") }}
+    {{ form.bio(class="form-control") }}
+
+    {{ form.photo.label(class="form-label") }}
+    {{ form.photo(class="form-control") }}
+    <br/>
+    {{ form.submit(class="btn btn-primary") }}
+  </form>
+
+{% endif %}
+
+
+{% endblock %}

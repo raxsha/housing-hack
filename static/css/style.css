@@ -1,9 +1,9 @@
 h1 {
-	color: darkblue;
+	color: #105B63;
 }
 
 body {
-	background: #f4f4f4;
+	background: #FFF9D2;
 }
 
 #demo{
@@ -13,4 +13,8 @@ body {
 
 p {
   margin: 1rem;
+}
+
+.btn {
+	background-color: #DB9E36;
 }
