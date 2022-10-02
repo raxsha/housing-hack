@@ -2,6 +2,8 @@
 
 Made for Girls Who Code NYC's Hack for Humanity 2022 event.
 
+See deployed application: https://find-housing-app.herokuapp.com/
+
 This application is intended to match landlords and tenants using criteria that is normally overlooked in the tenancy process - traits like neighborhood culture, and tenants who intend to volunteer in their community and make it a better place.
 
 The goal of this application is to match tenants who may be discriminated against through conventional processes because they "don't look good on paper," for reasons like having been formerly incarcerated.
