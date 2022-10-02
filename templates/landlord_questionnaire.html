@@ -1,0 +1,45 @@
+<!-- "Jinja" templating language for Python backends-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if name %}
+  <h1> Thanks, {{name|capitalize|trim}}.</h1>
+  <h3> You've just taken the first step to making your community better. </h3>
+
+  <p>
+    Using your survey responses, and comparing them to hundreds of other landlords like yourself, we have matched you with the following possible tenants.
+  </p>
+  <p style="font-weight: bold;">
+    Check out their profiles and find someone you can trust in your home.
+  </p>
+  <a class="btn btn-primary" href="/tenant_michael">Meet Michael »</a>
+  <br/>
+  <br/>
+  <a class="btn btn-primary" href="/tenant_dana">Meet Dana »</a>
+{% else %}
+  <h1> What's your name?</h1>
+  <br/>
+  <form method= "POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}  <!-- creates our CSRF -->
+
+    {{ form.name.label(class="form-label") }} <!-- classnames map to Bootstrap styles -->
+    {{ form.name(class="form-control") }}
+
+    {{ form.tenant.label(class="form-label") }}
+    {{ form.tenant(class="form-control") }}
+
+    {{ form.photo_user.label(class="form-label") }}
+    {{ form.photo_user(class="form-control") }}
+
+    {{ form.photo_home.label(class="form-label") }}
+    {{ form.photo_home(class="form-control") }}
+    <br/>
+    {{ form.submit(class="btn btn-primary") }}
+  </form>
+
+{% endif %}
+
+
+{% endblock %}

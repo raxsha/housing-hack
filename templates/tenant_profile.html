@@ -5,8 +5,19 @@
 {% block content %}
 
 {% if name %}
-  <h1> Hello {{name|capitalize|trim}}</h1>
-  <h3> Tell us about yourself!</h3>
+  <h1>Thanks, {{name|capitalize|trim}}</h1>
+  <h3>You've just taken the first step to finding the home you deserve.</h3>
+
+  <p>
+    Using your survey responses and information we've gathered from hundreds of current landlords, we're going to share your profile with homeowners who want you as their next tenant.
+  </p>
+
+  <p>
+    Your future matches will appear on this dashboard page and landlords will soon be in contact.
+  </p>
+
+  <br/>
+  <a class="btn btn-primary" href="/tenant_michael">Return to my Profile »</a>
 {% else %}
   <h1> What's your name?</h1>
   <br/>

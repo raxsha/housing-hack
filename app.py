@@ -40,6 +40,21 @@ class TenantProfileForm(FlaskForm):
     ])
     submit = SubmitField("Submit")
 
+# Tenant profile form class
+class LandlordForm(FlaskForm):
+    # validator to ensure data is entered
+    name = StringField("What's your name?", validators=[DataRequired()])
+    tenant = StringField("What kind of tenant are you looking for?", validators=[DataRequired()])
+    photo_user = FileField('Please upload a profile picture', validators=[
+        FileRequired(),
+        FileAllowed(['jpg', 'png'], 'Images only!')
+    ])
+    photo_home = FileField('Please upload a picture of the home', validators=[
+        FileRequired(),
+        FileAllowed(['jpg', 'png'], 'Images only!')
+    ])
+    submit = SubmitField("Submit")
+
 #router decorator
 @app.route('/')
 
@@ -85,6 +100,26 @@ def tenant_profile():
     name=name,
     form=form,
     filename=filename)
+
+# Create landlord's page
+@app.route('/landlord_questionnaire', methods=['GET', 'POST'])
+def landlord_questionaire():
+    name = None
+    form = LandlordForm()
+    # Validate form
+    if form.validate_on_submit():
+        name = form.name.data
+        form.name.data = ''
+        filename_user = secure_filename(form.photo_user.data.filename)
+        filename_home = secure_filename(form.photo_home.data.filename)
+    else:
+        filename_user = None
+        filename_home = None
+    return render_template("landlord_questionnaire.html",
+    name=name,
+    form=form,
+    filename_user=filename_user,
+    filename_home=filename_home)
 
 # Keep this at the bottom of run.py
 if __name__ == '__main__':
