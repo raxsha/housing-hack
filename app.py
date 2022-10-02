@@ -87,4 +87,5 @@ def tenant_profile():
     filename=filename)
 
 # Keep this at the bottom of run.py
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
