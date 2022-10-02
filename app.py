@@ -67,7 +67,7 @@ def tenant_michael():
 def tenant_dana():
     return render_template("tenant_dana.html",
         tenant_name="Dana",
-        tenant_bio="Dana loves gardening and growing her own vegetables.")
+        tenant_bio="Mary Jones is an Administrative Assistant with eight years of experience working alongside the executive team of a Fortune 500 company. Mary specializes in administrative technology and is responsible for educating other employees on using progressive systems and applications, including accounting software, mass communication procedures and organizational apps. Mary is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. Mary is inspired daily by her husband and their two daughters. In her free time, Mary likes to hike, crochet and play video games with her grandson")
 
 # Create tenant's page
 @app.route('/tenant_profile', methods=['GET', 'POST'])

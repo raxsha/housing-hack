@@ -18,3 +18,8 @@ p {
 .btn {
 	background-color: #DB9E36;
 }
+
+.profile-pic {
+	border: 50px solid #FFD34E;
+	border-radius: 3rem;
+}
