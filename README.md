@@ -13,6 +13,7 @@ We believe that our communities are overall stronger when more people are stably
 We also believe that landlords and tenants can both benefit from a process that humanizes one another - it creates more accountable relationships in paying rent or doing repairs when the parties are more invested in each other.
 
 Balsamiq designs:
+
 <img width="756" alt="Screen Shot 2022-10-02 at 1 12 07 PM" src="https://user-images.githubusercontent.com/10503669/193467008-27bcfbbb-71d2-46d8-91b5-d12c55aa49f5.png">
 
 Home page - mobile view
