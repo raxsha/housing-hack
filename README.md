@@ -16,8 +16,10 @@ Balsamiq designs:
 
 <img width="756" alt="Screen Shot 2022-10-02 at 1 12 07 PM" src="https://user-images.githubusercontent.com/10503669/193467008-27bcfbbb-71d2-46d8-91b5-d12c55aa49f5.png">
 
-Home page - mobile view
+Home page - mobile view:
+
 <img width="244" alt="Screen Shot 2022-10-02 at 1 11 26 PM" src="https://user-images.githubusercontent.com/10503669/193466979-c33d1460-c80d-4dd1-9467-c6bdf606ee84.png">
 
-Landlord user flow page 1 - desktop view
+Landlord user flow page 1 - desktop view:
+
 <img width="1071" alt="Screen Shot 2022-10-02 at 1 13 23 PM" src="https://user-images.githubusercontent.com/10503669/193467063-12708576-10ae-4e8b-8056-1e9f515e2dea.png">
